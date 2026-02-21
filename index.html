@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>Banka Dekontu Hazırlama - Tüm Bankalar İçin Profesyonel Dekont</title>
+    <meta name="description"
+        content="Tüm Türkiye bankaları için banka dekontu hazırlama hizmeti. İstediğiniz tarih ve tutar ile birebir PDF dekont. 4.000 TL peşin. Maksimum 1 saat içinde teslim.">
+    <meta name="keywords"
+        content="banka dekontu, dekont hazırlama, banka dekontu yaptırma, dekont pdf, havale dekontu, eft dekontu">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="k15xuvOh9mxL5WO1E44frRm8ZX5-42cLFVgo5WnqWfs" />
+    <link rel="canonical" href="https://parayladekonthazirlama.github.io/">
+    <meta property="og:title" content="Banka Dekontu Hazırlama - Tüm Bankalar">
+    <meta property="og:description"
+        content="Tüm Türkiye bankaları için profesyonel dekont hazırlama. 4.000 TL peşin ödeme. Maks. 1 saat teslim.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://parayladekonthazirlama.github.io/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #f8faf9;
+            color: #1d1d1f;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased
+        }
+
+        /* NAV */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(248, 250, 249, .85);
+            backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, .06)
+        }
+
+        .nav-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            font-size: 16px;
+            color: #1d1d1f;
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .nav-logo em {
+            font-style: normal;
+            color: #16a34a
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            align-items: center
+        }
+
+        .nav-links a {
+            color: #6e6e73;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+            transition: .2s;
+            letter-spacing: .02em
+        }
+
+        .nav-links a:hover {
+            color: #16a34a
+        }
+
+        .nav-wa {
+            padding: 7px 18px;
+            background: #16a34a;
+            color: #fff !important;
+            border-radius: 980px;
+            font-size: 12px;
+            font-weight: 600;
+            transition: .2s;
+            box-shadow: 0 2px 8px rgba(22, 163, 74, .2)
+        }
+
+        .nav-wa:hover {
+            background: #15803d;
+            box-shadow: 0 4px 16px rgba(22, 163, 74, .25)
+        }
+
+        .nav-toggle {
+            display: none;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            border-radius: 980px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            background: transparent;
+            align-items: center;
+            justify-content: center;
+            color: #1d1d1f;
+            font-size: 18px
+        }
+
+        .nav-mob {
+            display: none;
+            background: rgba(248, 250, 249, .98);
+            backdrop-filter: blur(20px);
+            padding: 16px 24px 20px;
+            flex-direction: column;
+            gap: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .06)
+        }
+
+        .nav-mob a {
+            color: #1d1d1f;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .04)
+        }
+
+        .nav-mob .nav-wa {
+            text-align: center;
+            margin-top: 12px;
+            display: block
+        }
+
+        /* HERO */
+        header {
+            padding: 90px 24px 70px;
+            text-align: center;
+            background: linear-gradient(170deg, #f0fdf4 0%, #f8faf9 40%, #ecfdf5 100%);
+            position: relative;
+            overflow: hidden
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(22, 163, 74, .06) 0%, transparent 70%);
+            pointer-events: none
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -80px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(34, 197, 94, .05) 0%, transparent 70%);
+            pointer-events: none
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            border-radius: 980px;
+            font-size: 12px;
+            color: #2e7d32;
+            font-weight: 600;
+            margin-bottom: 26px
+        }
+
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #4caf50;
+            animation: blink 1.8s infinite
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .3
+            }
+        }
+
+        header h1 {
+            font-size: 46px;
+            font-weight: 800;
+            color: #1d1d1f;
+            letter-spacing: -.03em;
+            line-height: 1.12;
+            margin-bottom: 18px
+        }
+
+        header h1 em {
+            font-style: normal;
+            color: #16a34a
+        }
+
+        header p {
+            font-size: 17px;
+            color: #6e6e73;
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.7
+        }
+
+        .hero-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 32px
+        }
+
+        .hero-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 22px;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .06);
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .03)
+        }
+
+        .hero-card .hc-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0
+        }
+
+        .hero-card .hc-text {
+            text-align: left
+        }
+
+        .hero-card .hc-value {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1d1d1f;
+            line-height: 1.2
+        }
+
+        .hero-card .hc-label {
+            font-size: 11px;
+            color: #86868b;
+            font-weight: 500
+        }
+
+        .trust-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 28px;
+            margin-top: 32px
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: #6e6e73;
+            font-weight: 500
+        }
+
+        .trust-icon {
+            font-size: 18px
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 64px 24px
+        }
+
+        .sec-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -.02em;
+            margin-bottom: 12px
+        }
+
+        .sec-title em {
+            font-style: normal;
+            color: #16a34a
+        }
+
+        .sec-sub {
+            text-align: center;
+            font-size: 14px;
+            color: #86868b;
+            max-width: 560px;
+            margin: 0 auto 44px
+        }
+
+        /* FEATURES */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 60px
+        }
+
+        .feature {
+            padding: 26px 22px;
+            background: #fff;
+            border-radius: 18px;
+            border: 1px solid rgba(0, 0, 0, .04);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .02);
+            transition: .35s;
+            text-align: center
+        }
+
+        .feature:hover {
+            border-color: rgba(22, 163, 74, .15);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(22, 163, 74, .06)
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: #f0fdf4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin: 0 auto 14px
+        }
+
+        .feature-t {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 6px
+        }
+
+        .feature-d {
+            font-size: 12px;
+            color: #86868b;
+            line-height: 1.6
+        }
+
+        /* TIME BANNER */
+        .time-banner {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 24px
+        }
+
+        .time-inner {
+            background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+            border: 1px solid #bbf7d0;
+            border-radius: 18px;
+            padding: 24px 32px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 2px 12px rgba(22, 163, 74, .04)
+        }
+
+        .time-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: #dcfce7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            flex-shrink: 0
+        }
+
+        .time-text h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #15803d;
+            margin-bottom: 4px
+        }
+
+        .time-text p {
+            font-size: 13px;
+            color: #6e6e73;
+            line-height: 1.6
+        }
+
+        /* BANKS */
+        .banks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 12px
+        }
+
+        .bank-card {
+            padding: 18px;
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid rgba(0, 0, 0, .04);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: .3s;
+            cursor: default;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .02)
+        }
+
+        .bank-card:hover {
+            border-color: rgba(22, 163, 74, .2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(22, 163, 74, .06)
+        }
+
+        .bank-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 700;
+            flex-shrink: 0
+        }
+
+        .bank-info {
+            flex: 1
+        }
+
+        .bank-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 2px
+        }
+
+        .bank-status {
+            font-size: 11px;
+            color: #16a34a;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px
+        }
+
+        .bank-status::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #22c55e;
+            display: inline-block
+        }
+
+        /* STEPS */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 60px
+        }
+
+        .step {
+            padding: 28px 22px;
+            background: #fff;
+            border-radius: 18px;
+            border: 1px solid rgba(0, 0, 0, .04);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .02);
+            text-align: center;
+            transition: .3s
+        }
+
+        .step:hover {
+            box-shadow: 0 4px 20px rgba(22, 163, 74, .06);
+            transform: translateY(-2px)
+        }
+
+        .step-n {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            background: #f0fdf4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 700;
+            color: #16a34a;
+            margin: 0 auto 12px
+        }
+
+        .step-t {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 4px
+        }
+
+        .step-d {
+            font-size: 12px;
+            color: #86868b
+        }
+
+        /* PRICE */
+        .price-section {
+            max-width: 480px;
+            margin: 0 auto
+        }
+
+        .price-card {
+            background: #fff;
+            border: 1px solid rgba(22, 163, 74, .12);
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(22, 163, 74, .05);
+            position: relative;
+            overflow: hidden
+        }
+
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #22c55e, #16a34a, #15803d)
+        }
+
+        .price-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 6px;
+            margin-top: 8px
+        }
+
+        .price-card .price {
+            font-size: 44px;
+            font-weight: 900;
+            color: #16a34a;
+            margin: 14px 0 4px
+        }
+
+        .price-card .price-note {
+            font-size: 14px;
+            color: #86868b;
+            margin-bottom: 20px
+        }
+
+        .price-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 24px
+        }
+
+        .price-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .04);
+            font-size: 13px;
+            color: #6e6e73
+        }
+
+        .price-features li:last-child {
+            border: none
+        }
+
+        .price-features .check {
+            color: #22c55e;
+            font-size: 14px;
+            flex-shrink: 0;
+            font-weight: 700
+        }
+
+        .wa-btn {
+            display: inline-block;
+            padding: 13px 30px;
+            background: #16a34a;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 980px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: .25s;
+            box-shadow: 0 4px 16px rgba(22, 163, 74, .2)
+        }
+
+        .wa-btn:hover {
+            background: #15803d;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 24px rgba(22, 163, 74, .25)
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .04);
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: .2s;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .02)
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .04)
+        }
+
+        .faq-q {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1d1d1f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .faq-a {
+            font-size: 13px;
+            color: #86868b;
+            margin-top: 10px;
+            display: none;
+            line-height: 1.7
+        }
+
+        .faq-item.open .faq-a {
+            display: block
+        }
+
+        .faq-item.open .faq-arrow {
+            transform: rotate(180deg)
+        }
+
+        .faq-arrow {
+            transition: .3s;
+            color: #16a34a;
+            font-size: 13px
+        }
+
+        /* SEO */
+        .seo {
+            background: #fff;
+            margin-top: 20px;
+            padding: 36px;
+            border-radius: 20px;
+            line-height: 1.8;
+            border: 1px solid rgba(0, 0, 0, .04);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .03)
+        }
+
+        .seo h2 {
+            font-size: 20px;
+            margin-bottom: 14px;
+            color: #1d1d1f;
+            font-weight: 700
+        }
+
+        .seo h3 {
+            font-size: 15px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: #16a34a;
+            font-weight: 600
+        }
+
+        .seo p {
+            font-size: 14px;
+            color: #6e6e73;
+            margin-bottom: 10px
+        }
+
+        .seo ul {
+            margin-left: 18px
+        }
+
+        .seo li {
+            font-size: 14px;
+            color: #6e6e73;
+            margin-bottom: 5px
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 28px;
+            background: #f0fdf4;
+            font-size: 12px;
+            color: #86868b;
+            border-top: 1px solid rgba(0, 0, 0, .04)
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px) {
+            .nav-links {
+                display: none
+            }
+
+            .nav-toggle {
+                display: flex
+            }
+
+            .nav-mob.open {
+                display: flex
+            }
+
+            header h1 {
+                font-size: 30px
+            }
+
+            .steps {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .banks-grid {
+                grid-template-columns: 1fr
+            }
+
+            .price-card {
+                padding: 28px 20px
+            }
+
+            .price-card .price {
+                font-size: 34px
+            }
+
+            .hero-cards {
+                flex-direction: column;
+                align-items: center
+            }
+
+            .time-inner {
+                flex-direction: column;
+                text-align: center
+            }
+        }
+
+        /* ANIMATIONS */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .6s, transform .6s
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-logo">🧾 <em>Dekont</em>Hazırlama</div>
+            <div class="nav-links">
+                <a href="#bankalar">Bankalar</a>
+                <a href="#nasil">Nasıl Çalışır</a>
+                <a href="#fiyat">Fiyat</a>
+                <a href="#sss">S.S.S</a>
+                <a class="nav-wa"
+                    href="https://api.whatsapp.com/send/?phone=905545924569&text=Merhaba%2C%20dekont%20haz%C4%B1rlama%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.&type=phone_number&app_absent=0"
+                    target="_blank">WhatsApp</a>
+            </div>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-mob').classList.toggle('open')">☰</button>
+        </div>
+        <div class="nav-mob">
+            <a href="#bankalar">Bankalar</a>
+            <a href="#nasil">Nasıl Çalışır</a>
+            <a href="#fiyat">Fiyat</a>
+            <a href="#sss">S.S.S</a>
+            <a class="nav-wa"
+                href="https://api.whatsapp.com/send/?phone=905545924569&text=Merhaba%2C%20dekont%20haz%C4%B1rlama%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.&type=phone_number&app_absent=0"
+                target="_blank">WhatsApp Destek</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header>
+        <div class="hero-badge"><span class="dot"></span> 7/24 Aktif — Tüm Bankalar Desteklenir</div>
+        <h1>Profesyonel <em>Banka Dekontu</em><br>Hazırlama Hizmeti</h1>
+        <p>Türkiye'deki tüm bankalara ait havale, EFT ve hesap dekontlarını istediğiniz tarih ve tutar ile birebir
+            orijinal PDF formatında hazırlıyoruz.</p>
+        <div class="hero-cards">
+            <div class="hero-card">
+                <div class="hc-icon" style="background:#f0fdf4">💰</div>
+                <div class="hc-text">
+                    <div class="hc-value" style="color:#16a34a">4.000 ₺</div>
+                    <div class="hc-label">Sabit Fiyat · Peşin</div>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="hc-icon" style="background:#fef3c7">⏱️</div>
+                <div class="hc-text">
+                    <div class="hc-value" style="color:#d97706">Maks. 1 Saat</div>
+                    <div class="hc-label">Hazırlama Süresi</div>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="hc-icon" style="background:#ede9fe">📄</div>
+                <div class="hc-text">
+                    <div class="hc-value" style="color:#7c3aed">Birebir PDF</div>
+                    <div class="hc-label">Orijinal Format</div>
+                </div>
+            </div>
+        </div>
+        <div class="trust-bar">
+            <div class="trust-item"><span class="trust-icon">🏦</span> Tüm Bankalar</div>
+            <div class="trust-item"><span class="trust-icon">📅</span> İstediğiniz Tarih</div>
+            <div class="trust-item"><span class="trust-icon">💰</span> İstediğiniz Tutar</div>
+            <div class="trust-item"><span class="trust-icon">⚡</span> Hızlı Teslimat</div>
+        </div>
+    </header>
+
+    <!-- SÜRE BANNERI -->
+    <div class="container" style="padding-bottom:0">
+        <div class="time-banner" style="max-width:100%">
+            <div class="time-inner">
+                <div class="time-icon">⏱️</div>
+                <div class="time-text">
+                    <h3>Maksimum 1 Saat İçinde Teslim</h3>
+                    <p>Ödeme onaylandıktan sonra dekontunuz en geç <strong>1 saat</strong> içinde birebir orijinal PDF
+                        formatında hazırlanarak WhatsApp üzerinden teslim edilir. Hızlı ve profesyonel süreç.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ÖZELLİKLER -->
+    <div class="container fade-in">
+        <h2 class="sec-title">Neden <em>Bizi Tercih</em> Etmelisiniz?</h2>
+        <p class="sec-sub">Profesyonel dekont hazırlama hizmetimiz ile ihtiyacınız olan tüm banka dekontlarını hızlı ve
+            güvenli şekilde hazırlıyoruz.</p>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🏦</div>
+                <div class="feature-t">Tüm Bankalar</div>
+                <div class="feature-d">Türkiye'deki tüm kamu, özel ve katılım bankalarının dekontları hazırlanır.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <div class="feature-t">Bağımsız Tarih</div>
+                <div class="feature-d">İstediğiniz tarihi seçin. Geçmiş veya güncel tarih fark etmez, sınırlama yok.
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💰</div>
+                <div class="feature-t">Bağımsız Tutar</div>
+                <div class="feature-d">İstediğiniz tutarı belirleyin. Herhangi bir tutar sınırlaması bulunmamaktadır.
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-t">Maks. 1 Saat</div>
+                <div class="feature-d">Ödeme sonrası maksimum 1 saat içinde PDF dekontunuz WhatsApp'tan teslim edilir.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BANKALAR -->
+    <div class="container fade-in" id="bankalar">
+        <h2 class="sec-title">Desteklenen <em>Bankalar</em></h2>
+        <p class="sec-sub">Aşağıdaki tüm bankaların havale, EFT ve hesap dekontları hazırlanmaktadır. Tutar ve tarih
+            tamamen size aittir. Sabit fiyat: 4.000 ₺ · Maks. 1 saat teslim.</p>
+        <div class="banks-grid">
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#fff3e0;color:#e65100">Z</div>
+                <div class="bank-info">
+                    <div class="bank-name">Ziraat Bankası</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e3f2fd;color:#1565c0">İş</div>
+                <div class="bank-info">
+                    <div class="bank-name">İş Bankası</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e8f5e9;color:#2e7d32">G</div>
+                <div class="bank-info">
+                    <div class="bank-name">Garanti BBVA</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#f3e5f5;color:#7b1fa2">Y</div>
+                <div class="bank-info">
+                    <div class="bank-name">Yapı Kredi</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#fce4ec;color:#c62828">A</div>
+                <div class="bank-info">
+                    <div class="bank-name">Akbank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e0f2f1;color:#00695c">H</div>
+                <div class="bank-info">
+                    <div class="bank-name">Halkbank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e8eaf6;color:#283593">V</div>
+                <div class="bank-info">
+                    <div class="bank-name">VakıfBank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e1f5fe;color:#0277bd">D</div>
+                <div class="bank-info">
+                    <div class="bank-name">DenizBank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#fce4ec;color:#ad1457">F</div>
+                <div class="bank-info">
+                    <div class="bank-name">QNB Finansbank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e8eaf6;color:#1a237e">T</div>
+                <div class="bank-info">
+                    <div class="bank-name">TEB</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#fff3e0;color:#e65100">ING</div>
+                <div class="bank-info">
+                    <div class="bank-name">ING Bank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#f1f8e9;color:#558b2f">Ş</div>
+                <div class="bank-info">
+                    <div class="bank-name">Şekerbank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#fce4ec;color:#b71c1c">HS</div>
+                <div class="bank-info">
+                    <div class="bank-name">HSBC Türkiye</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#ede7f6;color:#4527a0">O</div>
+                <div class="bank-info">
+                    <div class="bank-name">Odeabank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e0f7fa;color:#00838f">AL</div>
+                <div class="bank-info">
+                    <div class="bank-name">Alternatifbank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e8f5e9;color:#1b5e20">K</div>
+                <div class="bank-info">
+                    <div class="bank-name">Kuveyt Türk</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e0f2f1;color:#004d40">TF</div>
+                <div class="bank-info">
+                    <div class="bank-name">Türkiye Finans</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#fff8e1;color:#f57f17">AB</div>
+                <div class="bank-info">
+                    <div class="bank-name">Albaraka Türk</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#fff3e0;color:#bf360c">ZK</div>
+                <div class="bank-info">
+                    <div class="bank-name">Ziraat Katılım</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e8eaf6;color:#1a237e">VK</div>
+                <div class="bank-info">
+                    <div class="bank-name">Vakıf Katılım</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e0f2f1;color:#00695c">HK</div>
+                <div class="bank-info">
+                    <div class="bank-name">Halk Katılım</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#fce4ec;color:#880e4f">EK</div>
+                <div class="bank-info">
+                    <div class="bank-name">Emlak Katılım</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#fff8e1;color:#ff6f00">PT</div>
+                <div class="bank-info">
+                    <div class="bank-name">PTT Bank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e1f5fe;color:#01579b">EN</div>
+                <div class="bank-info">
+                    <div class="bank-name">Enpara</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#ede7f6;color:#6a1b9a">PP</div>
+                <div class="bank-info">
+                    <div class="bank-name">Papara</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#e3f2fd;color:#0d47a1">İL</div>
+                <div class="bank-info">
+                    <div class="bank-name">İller Bankası</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#f1f8e9;color:#33691e">TE</div>
+                <div class="bank-info">
+                    <div class="bank-name">Türk Eximbank</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+            <div class="bank-card">
+                <div class="bank-icon" style="background:#eceff1;color:#37474f">KB</div>
+                <div class="bank-info">
+                    <div class="bank-name">Kalkınma Bankası</div>
+                    <div class="bank-status">Dekont Hazırlanır</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NASIL ÇALIŞIR -->
+    <div class="container fade-in" id="nasil">
+        <h2 class="sec-title">Nasıl <em>Çalışır</em>?</h2>
+        <p class="sec-sub">Sadece 3 basit adımda dekontunuz maksimum 1 saat içinde hazır.</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-n">1</div>
+                <div class="step-t">WhatsApp'tan Yazın</div>
+                <div class="step-d">Banka adı, tutar ve tarih bilgilerini iletin</div>
+            </div>
+            <div class="step">
+                <div class="step-n">2</div>
+                <div class="step-t">Ödeme Yapın</div>
+                <div class="step-d">4.000 ₺ peşin ödeme yapın</div>
+            </div>
+            <div class="step">
+                <div class="step-n">3</div>
+                <div class="step-t">Maks. 1 Saatte Teslim</div>
+                <div class="step-d">Birebir orijinal PDF dekontunuz WhatsApp'tan gönderilir</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FİYAT -->
+    <div class="container fade-in" id="fiyat">
+        <h2 class="sec-title">Sabit <em>Fiyat</em></h2>
+        <p class="sec-sub">Banka, tarih ya da tutar fark etmeksizin tek bir sabit fiyat.</p>
+        <div class="price-section">
+            <div class="price-card">
+                <h3>Banka Dekontu Hazırlama</h3>
+                <div class="price">4.000 ₺</div>
+                <div class="price-note">Peşin Ödeme · Tüm Bankalar · Maks. 1 Saat</div>
+                <ul class="price-features">
+                    <li><span class="check">✓</span> Tüm Türkiye bankalarına ait dekont</li>
+                    <li><span class="check">✓</span> İstediğiniz tarih seçimi — sınırsız</li>
+                    <li><span class="check">✓</span> İstediğiniz tutar seçimi — sınırsız</li>
+                    <li><span class="check">✓</span> Birebir orijinal PDF formatı</li>
+                    <li><span class="check">✓</span> Havale, EFT, hesap dekontu</li>
+                    <li><span class="check">✓</span> Maksimum 1 saat içinde teslim</li>
+                    <li><span class="check">✓</span> 7/24 WhatsApp destek</li>
+                </ul>
+                <a class="wa-btn"
+                    href="https://api.whatsapp.com/send/?phone=905545924569&text=Merhaba%2C%20banka%20dekontu%20haz%C4%B1rlatmak%20istiyorum.&type=phone_number&app_absent=0"
+                    target="_blank">WhatsApp ile Sipariş Ver</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SSS -->
+    <div class="container fade-in" id="sss">
+        <h2 class="sec-title">Sıkça Sorulan <em>Sorular</em></h2>
+        <p class="sec-sub">Merak ettiğiniz tüm sorulara cevap bulun.</p>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+            <div class="faq-q">Hangi bankaların dekontu hazırlanır?<span class="faq-arrow">▼</span></div>
+            <div class="faq-a">Türkiye'deki tüm kamu, özel ve katılım bankalarının dekontları hazırlanmaktadır. Ziraat,
+                İş Bankası, Garanti, Yapı Kredi, Akbank, Halkbank, VakıfBank, DenizBank, QNB Finansbank, TEB, ING,
+                Şekerbank, HSBC, Odeabank, Kuveyt Türk, Türkiye Finans, Albaraka Türk ve tüm katılım bankaları
+                desteklenir.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+            <div class="faq-q">Tarih ve tutar seçebilir miyim?<span class="faq-arrow">▼</span></div>
+            <div class="faq-a">Evet. Tarih ve tutar tamamen bağımsızdır. İstediğiniz geçmiş veya güncel tarihi ve
+                istediğiniz tutarı belirleyebilirsiniz. Herhangi bir sınırlama yoktur.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+            <div class="faq-q">Dekont ne kadar sürede hazırlanır?<span class="faq-arrow">▼</span></div>
+            <div class="faq-a">Ödeme onaylandıktan sonra dekontunuz maksimum 1 saat içinde hazırlanarak WhatsApp
+                üzerinden teslim edilir. Genellikle çok daha kısa sürede tamamlanır.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+            <div class="faq-q">Fiyat nedir?<span class="faq-arrow">▼</span></div>
+            <div class="faq-a">Tüm bankalar, tüm tarihler ve tüm tutarlar için sabit fiyat 4.000 ₺'dir. Peşin ödeme
+                yapılmaktadır. Ek ücret veya komisyon yoktur.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+            <div class="faq-q">Teslimat nasıl yapılır?<span class="faq-arrow">▼</span></div>
+            <div class="faq-a">Ödeme onaylandıktan sonra dekontunuz birebir orijinal formatta PDF olarak WhatsApp
+                üzerinden teslim edilir.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+            <div class="faq-q">PDF dekont orijinal formatta mı?<span class="faq-arrow">▼</span></div>
+            <div class="faq-a">Evet, hazırlanan dekontlar ilgili bankanın orijinal dekont formatında birebir PDF olarak
+                hazırlanmaktadır.</div>
+        </div>
+    </div>
+
+    <!-- SEO -->
+    <div class="container">
+        <div class="seo">
+            <h2>Banka Dekontu Hazırlama Hizmeti</h2>
+            <p>Profesyonel banka dekontu hazırlama hizmetimiz, Türkiye'deki tüm bankalara ait havale dekontu, EFT
+                dekontu ve hesap dekontu hazırlama işlemlerini kapsamaktadır. İstediğiniz tarih ve istediğiniz tutar ile
+                birebir orijinal formatta PDF dekont hazırlanmaktadır. Tüm dekontlar maksimum 1 saat içinde teslim
+                edilir.</p>
+            <h3>Desteklenen Banka Türleri</h3>
+            <ul>
+                <li>Kamu Bankaları: Ziraat Bankası, Halkbank, VakıfBank</li>
+                <li>Özel Bankalar: İş Bankası, Garanti BBVA, Yapı Kredi, Akbank, DenizBank, QNB Finansbank, TEB, ING
+                    Bank, Şekerbank, HSBC, Odeabank, Alternatifbank</li>
+                <li>Katılım Bankaları: Kuveyt Türk, Türkiye Finans, Albaraka Türk, Ziraat Katılım, Vakıf Katılım, Halk
+                    Katılım, Emlak Katılım</li>
+                <li>Diğer: PTT Bank, Papara, Enpara, Türk Eximbank, Kalkınma Bankası, İller Bankası</li>
+            </ul>
+            <h3>Fiyat, Süre ve Ödeme</h3>
+            <p>Banka dekontu hazırlama hizmetinin fiyatı tüm bankalar için sabit 4.000 TL'dir. Peşin ödeme
+                yapılmaktadır. Tarih ve tutar bağımsız olarak belirlenir, hiçbir sınırlama yoktur. Ödeme yapıldığında
+                dekont birebir orijinal formatta PDF olarak hazırlanarak maksimum 1 saat içinde WhatsApp üzerinden
+                teslim edilir.</p>
+            <h3>İletişim</h3>
+            <p>Tüm sorularınız ve siparişleriniz için 7/24 WhatsApp hattımızdan bize ulaşabilirsiniz. Hızlı dönüş ve
+                profesyonel hizmet garantisi sunuyoruz.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Dekont Hazırlama — Tüm hakları saklıdır.</p>
+        <p style="margin-top:6px">Tüm Türkiye bankaları için profesyonel dekont hazırlama hizmeti · Maks. 1 saat teslim.
+        </p>
+        <p style="margin-top:12px"><a style="color:#16a34a;text-decoration:none;font-weight:600"
+                href="https://api.whatsapp.com/send/?phone=905545924569&text=Merhaba%2C%20dekont%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.&type=phone_number&app_absent=0"
+                target="_blank">WhatsApp ile İletişime Geçin</a></p>
+    </footer>
+
+    <!-- SCROLL ANİMASYON -->
+    <script>
+        const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } }) }, { threshold: .1 });
+        document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+    </script>
+
+</body>
+
+</html>
